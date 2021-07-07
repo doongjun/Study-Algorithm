@@ -1,0 +1,36 @@
+package baekjoon;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+//DFS와 BFS
+public class BFSandDFS {
+	static int N;
+	static int M;
+	static int V;
+	static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+	
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		N = scan.nextInt();
+		M = scan.nextInt();
+		V = scan.nextInt();
+		
+		for(int i=0; i<=N; i++) {
+			graph.add(new ArrayList<Integer>());
+		}
+		
+		for(int i=0; i<M; i++) {
+			int u = scan.nextInt();
+			int v = scan.nextInt();	
+			
+			graph.get(u).add(v);
+		}
+		System.out.println(graph);
+	}
+
+}

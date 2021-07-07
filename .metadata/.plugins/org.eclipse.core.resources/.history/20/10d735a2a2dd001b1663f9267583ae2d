@@ -1,0 +1,16 @@
+package programmers;
+import java.util.regex.Pattern;
+
+public class BFSandDFS1 {
+
+	public static void main(String[] args) {
+		
+		String pattern = "[^a-zA-Z]*$";
+		String val = "abscdef";
+		
+		boolean res = Pattern.matches(pattern, val);
+		System.out.println(res);
+		
+	}
+
+}

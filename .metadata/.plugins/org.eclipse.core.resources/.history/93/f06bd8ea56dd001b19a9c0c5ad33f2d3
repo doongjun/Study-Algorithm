@@ -1,0 +1,39 @@
+package programmers;
+
+import java.util.Arrays;
+
+//가장큰수
+public class Sort1 {
+
+	public static void main(String[] args) {
+		class Solution {
+		    public String solution(int[] numbers) {
+		        String answer = "";
+		        int max = 0, idx = 0;
+		        for(int i=1; i<numbers.length; i++) {
+		        	char cur = Integer.toString(numbers[i]).charAt(0);
+		        	char pre = Integer.toString(numbers[i-1]).charAt(0);
+		        	for(int j=i; j>0; j--) {
+		        		if(cur > pre) {
+		        			int tmp = numbers[i];
+		        			numbers[i] = numbers[i-1];
+		        			numbers[i-1] = tmp;
+		        		}
+		        	}
+		        }
+		        
+		        System.out.println(Arrays.toString(numbers));
+		        
+		        
+		        return answer;
+		    }
+		}
+		
+		Solution s = new Solution();
+		
+		int[] numbers = {6, 10, 2};
+ 		s.solution(numbers);
+
+	}
+
+}
