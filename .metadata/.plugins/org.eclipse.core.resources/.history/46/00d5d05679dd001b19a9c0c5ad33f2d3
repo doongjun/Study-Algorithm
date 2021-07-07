@@ -1,0 +1,28 @@
+package baekjoon;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+//DFS와 BFS
+public class BFSandDFS {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int N = scan.nextInt();
+		int M = scan.nextInt();
+		int V = scan.nextInt();
+		
+		int[][] board = new int[M][M];
+		
+		for(int i=0; i<M; i++) {
+			int r = scan.nextInt();
+			int c = scan.nextInt();
+			board[r][c] = board[c][r] = 1;
+		}
+		
+		System.out.println(Arrays.deepToString(board));
+
+	}
+
+}

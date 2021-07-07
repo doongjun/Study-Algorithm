@@ -1,0 +1,31 @@
+package note;
+
+import java.util.Scanner;
+
+//나동빈
+//1이 될 때까지
+public class Greedy2 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+		int k = scan.nextInt();
+		
+		int cnt = 0;
+		while(n!=1) {
+			if(n%k==0) {
+				n /= k;
+				cnt++;
+			}
+			else {
+				n -= 1;
+				cnt++;
+			}
+		}
+		
+		System.out.println(cnt);
+
+	}
+
+}

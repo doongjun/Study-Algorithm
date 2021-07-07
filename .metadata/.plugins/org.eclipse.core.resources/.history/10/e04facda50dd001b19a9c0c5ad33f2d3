@@ -1,0 +1,23 @@
+package note;
+
+import java.util.*;
+
+//DFS
+//음료수 얼려먹기
+public class Test1 {
+
+	public static void main(String[] args) {
+		class Solution {
+		    public boolean solution(String[] phone_book) {
+		        boolean answer = true;
+		        return answer;
+		    }
+		}
+		
+		Solution s = new Solution();
+		String phone_book = {"119", }
+		s.solution(args)
+		
+	}
+
+}

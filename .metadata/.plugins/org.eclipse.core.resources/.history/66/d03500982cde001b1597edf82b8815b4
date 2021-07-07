@@ -1,0 +1,41 @@
+package programmers;
+
+//로또 최고 순위와 최저 순위
+public class LottoLank {
+
+	public static void main(String[] args) {
+		class Solution {
+		    public int[] solution(int[] lottos, int[] win_nums) {
+		        int[] answer = new int[2];
+		        int lowcnt=0;
+		        int highcnt=0;
+		        
+		        for(int x : lottos) {
+		        	if(x==0) {
+		        		highcnt++;
+		        		continue;
+		        	}
+		        	for(int y : win_nums) {
+		        		if(x == y) {
+		        			lowcnt++;
+		        			highcnt++;
+		        		}
+		        	}
+		        }
+		        for(int i=0; i<7; i++) {
+		        	if(highcnt==0);
+		        }
+		        System.out.println(highcnt);
+		        System.out.println(lowcnt);
+		        return answer;
+		    }
+		}
+		
+		Solution s = new Solution();
+		int[] lottos = {0, 0, 0, 0, 0, 0};
+		int[] win_nums = {38, 19, 20, 40, 15, 25};
+		s.solution(lottos, win_nums);
+
+	}
+
+}
