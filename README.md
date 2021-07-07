@@ -1,7 +1,7 @@
 # Study-Algorithm
 자바로 구현하는 알고리즘과 코딩테스트
 
-📁[baekjoon](./backjoon/src/backjoon)
+📁[baekjoon](./baekjoon/src/baekjoon)
 백준 문제풀이
 
 📁[javaStudy](./javaStudy/src/javaStudy)
