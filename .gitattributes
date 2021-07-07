@@ -1,1 +1,1 @@
-source_*.js linguist-vendored
+*.js linguist-language=Java
