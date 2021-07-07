@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 //나동빈
 //상하좌우
+//그리디x 구현
 public class Greedy5 {
 
 	public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Greedy5 {
 		
 		int N = scan.nextInt();
 		
-		scan.nextLine();
+		scan.nextLine(); //버퍼 비우기
 		String[] plans = scan.nextLine().split(" ");
 		
 		int[] dx = {0, 0, -1, 1};
