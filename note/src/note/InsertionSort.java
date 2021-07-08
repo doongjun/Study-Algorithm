@@ -1,27 +1,35 @@
 package note;
 
+import java.util.*;
+
+//삽입정력
+//시간복잡도 : O(n^2), 최선의 경우 O(n)
 public class InsertionSort {
-	
-	private static int[] input = {5, 6, 2, 8, 7, 23, 4, 1, 44};
 
-	public static void main(String[] args) {
-		 insertionSort(input, input.length);
-		    for (int a : input) {
-		      System.out.print(a + " ");
-		    }
-		  }
+    public static void main(String[] args) {
 
-	 private static void insertionSort(int[] input, int length) {
-		    int tmp;
-		    for (int i = 1; i < length; i++) {
-		      for (int j = i; j > 0; j--) {
-		        if (input[j - 1] > input[j]) {
-		          tmp = input[j - 1];
-		          input[j - 1] = input[j];
-		          input[j] = tmp;
-		        }
-		      }
-		    }
-		  }
-	}
+        int n = 10;
+        int[] arr = {7, 5, 9, 0, 3, 1, 6, 2, 4, 8};
+
+        for (int i = 1; i < n; i++) {
+            // 인덱스 i부터 1까지 감소하며 반복하는 문법
+            for (int j = i; j > 0; j--) {
+                // 한 칸씩 왼쪽으로 이동
+                if (arr[j] < arr[j - 1]) {
+                    // 스와프(Swap)
+                    int temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                }
+                // 자기보다 작은 데이터를 만나면 그 위치에서 멈춤
+                else break;
+            }
+        }
+
+        for(int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+}
 
