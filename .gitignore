@@ -119,4 +119,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# 시험파일 무시
+Test1.java
+Test2.java
+Test3.java
+NaverTest1.java
+
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,eclipse,java
