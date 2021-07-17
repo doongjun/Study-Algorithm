@@ -23,5 +23,4 @@ public class setExam {
 			System.out.println(str);
 		}
 	}
-
 }
