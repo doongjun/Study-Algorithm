@@ -4,7 +4,7 @@
 📁[baekjoon](./baekjoon/src/baekjoon)
 백준 문제풀이
 
-📁[javaStudy](./javaStudy/src/javaStudy)
+📁[javaStudy](./javaStudy/src)
 자바 공부하는 공간
 
 📁[note](./note/src/note)
