@@ -22,6 +22,7 @@ public class Player {
 	        for(Entry<String, Integer> entry : hash.entrySet()) {
 	        	if(entry.getValue() > 0) {
 	        		answer = entry.getKey();
+	        		break;
 	        	}
 	        	
 	        }
