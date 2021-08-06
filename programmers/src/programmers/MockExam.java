@@ -3,6 +3,8 @@ package programmers;
 import java.util.ArrayList;
 import java.util.List;
 
+//모의고사
+//완전탐색
 public class MockExam {
 
 	public static void main(String[] args) {
