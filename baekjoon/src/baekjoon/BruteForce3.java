@@ -1,4 +1,4 @@
-package test;
+package baekjoon;
 
 //4673 셀프넘버
 public class BruteForce3 {

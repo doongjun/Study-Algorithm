@@ -1,4 +1,4 @@
-package test;
+package note;
 
 import java.util.Arrays;
 import java.util.Comparator;

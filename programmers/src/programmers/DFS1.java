@@ -1,4 +1,4 @@
-package test;
+package programmers;
 
 public class DFS1 {
     static boolean[] visited;
