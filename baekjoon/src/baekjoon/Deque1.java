@@ -27,21 +27,19 @@ public class Deque1 {
 		st = new StringTokenizer(br.readLine());
 		for(int i=0; i<m; i++) {
 			int targetNum = Integer.parseInt(st.nextToken());
-			answer += findTargetNum(targetNum);
+			answer += findTargetNumCnt(targetNum);
 		}
 		
 		System.out.println(answer);
 	}
 	
-	public static int findTargetNum(int targetNum) {
+	public static int findTargetNumCnt(int targetNum) {
 		Iterator iterator = deque.iterator();
 		int idx = -1;
 		int halfIdx;
 		while(iterator.hasNext()) {
 			idx++;
-			if((int)iterator.next() == targetNum) {
-				break;
-			}
+			if((int)iterator.next() == targetNum) break;
 		}
 		
 		if(deque.size()%2 == 0) {
