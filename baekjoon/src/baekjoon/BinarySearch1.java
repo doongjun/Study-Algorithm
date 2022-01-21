@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+// 1920 수 찾기
 public class BinarySearch1 {
 
 	public static void main(String[] args) throws IOException {
