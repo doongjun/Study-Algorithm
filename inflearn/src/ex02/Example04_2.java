@@ -2,8 +2,8 @@ package ex02;
 
 import java.util.Scanner;
 
-// 3.피보나치수열
-public class Example03_2 {
+// 4.피보나치수열
+public class Example04_2 {
 
 	static void solution(int n) {
 		int a=1, b=1, c;
