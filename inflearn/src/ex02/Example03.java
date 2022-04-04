@@ -2,26 +2,19 @@ package ex02;
 
 import java.util.Scanner;
 
-// 3.피보나치수열
+// 3.가위바위보
 public class Example03 {
-
-	static String solution(int n) {
-		String answer = "";
-		int[] result = new int[n+1];
-		StringBuilder sb = new StringBuilder();
+	
+	static char[] solution(int n, int[] A, int[] B) {
+		char[] answer = new char[n];
 		
-		for(int i=1; i<=n; i++) {
-			if(i==1 || i==2) {
-				sb.append("1 ");
-				result[i] = 1;
-			}
-			else {
-				result[i] = result[i-1] + result[i-2];
-				sb.append(result[i] + " ");
-			}
+		for(int i=0; i<n; i++) {
+			if(A[i] == B[i]) answer[i] = 'D';
+			else if(A[i] == 1 && B[i] == 3) answer[i] = 'A';
+			else if(A[i] == 2 && B[i] == 1) answer[i] = 'A';
+			else if(A[i] == 3 && B[i] == 2) answer[i] = 'A';
+			else answer[i] = 'B';
 		}
-		
-		answer = sb.toString();
 		
 		return answer;
 	}
@@ -30,7 +23,17 @@ public class Example03 {
 		Scanner scan = new Scanner(System.in);
 		
 		int n = scan.nextInt();
+		int[] A = new int[n];
+		int[] B = new int[n];
+		for(int i=0; i<n; i++) {
+			A[i] = scan.nextInt();
+		}
+		for(int i=0; i<n; i++) {
+			B[i] = scan.nextInt();
+		}
 
-		System.out.println(solution(n));
+		for(char winner : solution(n, A, B)) {
+			System.out.println(winner);
+		}
 	}
 }

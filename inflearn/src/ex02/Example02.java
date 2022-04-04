@@ -5,15 +5,15 @@ import java.util.Scanner;
 // 2.보이는 학생
 public class Example02 {
 	
-	static char[] solution(int n, int[] A, int[] B) {
-		char[] answer = new char[n];
+	static int solution(int n, int[] nums) {
+		int answer = 1;
 		
-		for(int i=0; i<n; i++) {
-			if(A[i] == B[i]) answer[i] = 'D';
-			else if(A[i] == 1 && B[i] == 3) answer[i] = 'A';
-			else if(A[i] == 2 && B[i] == 1) answer[i] = 'A';
-			else if(A[i] == 3 && B[i] == 2) answer[i] = 'A';
-			else answer[i] = 'B';
+		int max = nums[0];
+		for(int i=1; i<n; i++) {
+			if(nums[i] > max) {
+				max = nums[i];
+				answer++;
+			}
 		}
 		
 		return answer;
@@ -23,17 +23,11 @@ public class Example02 {
 		Scanner scan = new Scanner(System.in);
 		
 		int n = scan.nextInt();
-		int[] A = new int[n];
-		int[] B = new int[n];
+		int[] nums = new int[n];
 		for(int i=0; i<n; i++) {
-			A[i] = scan.nextInt();
-		}
-		for(int i=0; i<n; i++) {
-			B[i] = scan.nextInt();
+			nums[i] = scan.nextInt();
 		}
 
-		for(char winner : solution(n, A, B)) {
-			System.out.println(winner);
-		}
+		System.out.println(solution(n, nums));
 	}
 }

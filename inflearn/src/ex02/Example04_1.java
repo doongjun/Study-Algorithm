@@ -2,8 +2,8 @@ package ex02;
 
 import java.util.Scanner;
 
-// 3.피보나치수열
-public class Example03_1 {
+// 4.피보나치수열
+public class Example04_1 {
 
 	static int[] solution(int n) {
 		int[] answer = new int[n];
