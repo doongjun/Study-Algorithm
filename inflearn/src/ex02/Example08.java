@@ -2,19 +2,20 @@ package ex02;
 
 import java.util.Scanner;
 
-// 8.등수구하기
-public class Example07 {
+// 7.점수계산
+public class Example08 {
 
-	static int[] solution(int n, int[] arr) {
-		int[] answer = new int[n];
+	static int solution(int n, int[] arr) {
+		int answer = 0, score = 0;
 		for(int i=0; i<n; i++) {
-			answer[i] = 1;
-			for(int j=0; j<n; j++) {
-				if(arr[j] > arr[i]) {
-					answer[i]++;
-				}
+			if(arr[i] == 0) {
+				score = 0;
+			} else {
+				score++;
+				answer += score;
 			}
 		}
+		
 		return answer;
 	}
 
@@ -27,8 +28,6 @@ public class Example07 {
 			arr[i] = scan.nextInt();
 		}
 
-		for(int i : solution(n, arr)) {
-			System.out.print(i + " ");
-		}
+		System.out.println(solution(n, arr));
 	}
 }
