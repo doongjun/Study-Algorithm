@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-// stack
+// queue
 // 6.공주 구하기
 public class Example06_1 {
 	static int solution(int n, int k) {
