@@ -3,6 +3,7 @@ package 커뮤러닝.week1;
 import java.util.Arrays;
 import java.util.Comparator;
 
+//가장 큰 수
 public class Sort1 {
 	
 	public static String solution(int[] numbers) {

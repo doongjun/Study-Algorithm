@@ -1,8 +1,8 @@
 package 커뮤러닝.week1;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
+// 예산
 public class BinarySearch1 {
 	
 	public static long sumBudgets(int[] budgets, int upperLimit) {
